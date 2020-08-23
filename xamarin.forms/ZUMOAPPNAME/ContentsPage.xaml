@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediinApp.ContentsPage">
+    <ContentPage.Content>
+        <Grid Padding="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="Username" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="팔" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="다리" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="2"/>
+            <Label Text="요가" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="3"/>
+            <Label Text="만세" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="4"/>
+            <Label Text="족압" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="5"/>
+            
+            <Label Text="총계" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+            <Label x:Name="arm" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+            <Label x:Name="sit" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+            <Label x:Name="yoga" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="3"/>
+            <Label x:Name="praise" TextColor="Black" BackgroundColor="Silver" FontFamily="NanumGothic.ttf#NanumGothic"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="4"/>
+
+            <ListView x:Name="WholeList"
+				IsPullToRefreshEnabled="True" Refreshing="Reset"
+				Grid.Row="2" Grid.ColumnSpan="6" Grid.RowSpan="4">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem  Text="Complete" CommandParameter="{Binding .}"/>
+                            </ViewCell.ContextActions>
+                            <Grid Padding="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding date}"  Grid.Column="0"
+                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding arm}"  Grid.Column="1"
+                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding sit}"  Grid.Column="2"
+                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding yoga}"  Grid.Column="3"
+                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding praise}"  Grid.Column="4"
+                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding foot}"  Grid.Column="5"
+                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

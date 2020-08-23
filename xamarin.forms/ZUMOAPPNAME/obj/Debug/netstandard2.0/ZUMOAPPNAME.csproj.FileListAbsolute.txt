@@ -1,0 +1,11 @@
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\bin\Debug\netstandard2.0\ZUMOAPPNAME.deps.json
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\bin\Debug\netstandard2.0\ZUMOAPPNAME.dll
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\bin\Debug\netstandard2.0\ZUMOAPPNAME.pdb
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\ZUMOAPPNAME.csprojAssemblyReference.cache
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\TodoList.xaml.g.cs
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\ZUMOAPPNAME.csproj.CoreCompileInputs.cache
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\ZUMOAPPNAME.AssemblyInfoInputs.cache
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\ZUMOAPPNAME.AssemblyInfo.cs
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\ZUMOAPPNAME.dll
+C:\Users\S_M_Com\Desktop\xamarin.forms\ZUMOAPPNAME\obj\Debug\netstandard2.0\ZUMOAPPNAME.pdb
